@@ -1,0 +1,302 @@
+{
+  "Id": "1035e6fa11814659839e7c6819e90bc4",
+  "Name": "SER_RT_ServiceProvidersDetails",
+  "Description": [
+    {
+      "Language": "en",
+      "Text": "SER_RT_ServiceProvidersDetails"
+    },
+    {
+      "Language": "",
+      "Text": "SER_RT_ServiceProvidersDetails"
+    }
+  ],
+  "Label": [
+    {
+      "Language": "",
+      "Text": "SER_RT_ServiceProvidersDetails"
+    },
+    {
+      "Language": "en",
+      "Text": "SER_RT_ServiceProvidersDetails"
+    }
+  ],
+  "ChangedOn": "2023-03-10T14:49:14.025Z",
+  "ChangedBy": "sb-clone-a1aeb12a-5a17-40e4-85dd-f9ef0241152f!b882|bpmrulebroker!b335",
+  "Project": "0fdcc5fac8cf4cd9ad420fa81dc55848",
+  "Type": "DT",
+  "Result": {
+    "ObjectId": "8ea0e34c706c4ecf932272690fffcd6a"
+  },
+  "DecisionTable": {
+    "HitPolicy": "MHO",
+    "Column": [
+      {
+        "Id": "4",
+        "SequenceNumber": 1,
+        "Description": [
+          {
+            "Language": "",
+            "Text": ""
+          }
+        ],
+        "Type": "C",
+        "Condition": {
+          "Expression": "",
+          "AST": [
+            {
+              "Id": "1",
+              "Root": true,
+              "Reference": "/26312e976c714ad485e2e1f4a79648d1/1894729a339e44e18b849cc3eff7ceea"
+            }
+          ],
+          "ValueOnly": false,
+          "FixedOperator": "IsNotEqual"
+        }
+      },
+      {
+        "Id": "5",
+        "SequenceNumber": 2,
+        "Description": [],
+        "Type": "R",
+        "Result": {
+          "Segment": "70370ac609484a00a8858c0a1425486e",
+          "Cell": {
+            "Mode": "E",
+            "FixedExpression": null,
+            "AST": []
+          }
+        }
+      },
+      {
+        "Id": "6",
+        "SequenceNumber": 3,
+        "Description": [],
+        "Type": "R",
+        "Result": {
+          "Segment": "0a60afdf81854aae8d35ba030b7916e3",
+          "Cell": {
+            "Mode": "E",
+            "FixedExpression": null,
+            "AST": []
+          }
+        }
+      }
+    ],
+    "Row": [
+      {
+        "Id": "1",
+        "SequenceNumber": 1
+      },
+      {
+        "Id": "2",
+        "SequenceNumber": 2
+      },
+      {
+        "Id": "3",
+        "SequenceNumber": 3
+      }
+    ],
+    "Cell": [
+      {
+        "ColumnId": "4",
+        "RowId": "1",
+        "Expression": "",
+        "AST": [
+          {
+            "Id": "1",
+            "Root": true,
+            "Placeholder": true,
+            "Children": [
+              {
+                "Id": "2",
+                "SequenceNumber": 1
+              },
+              {
+                "Id": "3",
+                "SequenceNumber": 2
+              }
+            ]
+          },
+          {
+            "Id": "3",
+            "Value": "1",
+            "Output": {
+              "DataObjectType": "E",
+              "BusinessDataType": "N"
+            }
+          },
+          {
+            "Id": "2",
+            "Placeholder": true
+          }
+        ]
+      },
+      {
+        "ColumnId": "4",
+        "RowId": "2",
+        "Expression": "",
+        "AST": [
+          {
+            "Id": "1",
+            "Root": true,
+            "Placeholder": true,
+            "Children": [
+              {
+                "Id": "2",
+                "SequenceNumber": 1
+              },
+              {
+                "Id": "3",
+                "SequenceNumber": 2
+              }
+            ]
+          },
+          {
+            "Id": "2",
+            "Placeholder": true
+          },
+          {
+            "Id": "3",
+            "Value": "2",
+            "Output": {
+              "DataObjectType": "E",
+              "BusinessDataType": "N"
+            }
+          }
+        ]
+      },
+      {
+        "ColumnId": "4",
+        "RowId": "3",
+        "Expression": "",
+        "AST": [
+          {
+            "Id": "1",
+            "Root": true,
+            "Placeholder": true,
+            "Children": [
+              {
+                "Id": "2",
+                "SequenceNumber": 1
+              },
+              {
+                "Id": "3",
+                "SequenceNumber": 2
+              }
+            ]
+          },
+          {
+            "Id": "2",
+            "Placeholder": true
+          },
+          {
+            "Id": "3",
+            "Value": "3",
+            "Output": {
+              "DataObjectType": "E",
+              "BusinessDataType": "N"
+            }
+          }
+        ]
+      },
+      {
+        "ColumnId": "5",
+        "RowId": "1",
+        "Expression": "",
+        "AST": [
+          {
+            "Id": "1",
+            "Root": true,
+            "Value": "Tamimi",
+            "Output": {
+              "DataObjectType": "E",
+              "BusinessDataType": "S"
+            }
+          }
+        ]
+      },
+      {
+        "ColumnId": "5",
+        "RowId": "2",
+        "Expression": "",
+        "AST": [
+          {
+            "Id": "1",
+            "Root": true,
+            "Value": "Coastline",
+            "Output": {
+              "DataObjectType": "E",
+              "BusinessDataType": "S"
+            }
+          }
+        ]
+      },
+      {
+        "ColumnId": "5",
+        "RowId": "3",
+        "Expression": "",
+        "AST": [
+          {
+            "Id": "1",
+            "Root": true,
+            "Value": "test11",
+            "Output": {
+              "DataObjectType": "E",
+              "BusinessDataType": "S"
+            }
+          }
+        ]
+      },
+      {
+        "ColumnId": "6",
+        "RowId": "1",
+        "Expression": "",
+        "AST": [
+          {
+            "Id": "1",
+            "Root": true,
+            "Value": "1",
+            "Output": {
+              "DataObjectType": "E",
+              "BusinessDataType": "N"
+            }
+          }
+        ]
+      },
+      {
+        "ColumnId": "6",
+        "RowId": "2",
+        "Expression": "",
+        "AST": [
+          {
+            "Id": "1",
+            "Root": true,
+            "Value": "2",
+            "Output": {
+              "DataObjectType": "E",
+              "BusinessDataType": "N"
+            }
+          }
+        ]
+      },
+      {
+        "ColumnId": "6",
+        "RowId": "3",
+        "Expression": "",
+        "AST": [
+          {
+            "Id": "1",
+            "Root": true,
+            "Value": "3",
+            "Output": {
+              "DataObjectType": "E",
+              "BusinessDataType": "N"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "ExpressionLanguageVersion": "2.0.0"
+}

@@ -1,0 +1,45 @@
+<mvc:View controllerName="ns.exercise5.controller.root" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <App id="idRoot">
+        <pages>
+            <Page id="page" title="Root View">
+                <content>
+                    <Table id="idNodes" items="{flat>/rows}">
+                        <columns>
+                            <Column>
+                                <header>
+                                    <Text text="Line No" />
+                                </header>
+                            </Column>
+                            <Column>
+                                <header>
+                                    <Text text="Item" />
+                                </header>
+                            </Column>
+                            <Column>
+                                <header>
+                                    <Text text="Code" />
+                                </header>
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Input value="{flat>lineNo}" />
+                                    <Input value="{flat>item}" />
+                                    <Input value="{flat>code}" />
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </content>
+                <footer>
+                    <Bar>
+                        <contentRight>
+                            <Button text="Save Changes" press="handleSaveChanges" />
+                        </contentRight>
+                    </Bar>
+                </footer>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>
