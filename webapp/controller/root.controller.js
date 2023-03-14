@@ -81,15 +81,31 @@ sap.ui.define(
 
       handleSaveChanges: function (oEvent) {
         var aFlattendData = this.getView().getModel("flat").getData().rows;
+        var aColumnKeys = Object.keys(this._oRowTemplate);
         $.each(aFlattendData, (index, oFlatData) => {
           const [row, column] = oFlatData.identifier;
-          column.map((element) => {
-            var keys = Object.keys(element);
-            // if (keys.indexOf("Value") > 0) {
-            //   element["Value"] =
-            // }
+          var i = 0;
+          $.each(column, (key, element) => {
+            var sColumnName = aColumnKeys[i];
+            element["Value"] = oFlatData[sColumnName];
+            i++;
           });
         });
+
+        // update the original payload.
+        var oData = this.getView().getModel().getData();
+        var aCells = oData.DecisionTable["Cell"];
+        $.each(aCells, (index, cell) => {
+          var oUpdatedValue = this._mCellIdentifier[cell.RowId][cell.ColumnId];
+          cell.AST = cell.AST.map((element) => {
+            var keys = Object.keys(element);
+            if (keys.indexOf("Value") > 0) {
+              element["Value"] = oUpdatedValue["Value"];
+            }
+            return element;
+          });
+        });
+        debugger;
       },
     });
   }
