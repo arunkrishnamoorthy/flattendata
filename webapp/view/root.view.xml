@@ -1,9 +1,17 @@
-<mvc:View controllerName="ns.exercise5.controller.root" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+<mvc:View controllerName="ns.exercise5.controller.root" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:code="sap.ui.codeeditor">
     <App id="idRoot">
         <pages>
             <Page id="page" title="Root View">
                 <content>
-                    <Table id="idNodes" items="{flat>/rows}">
+                    <Table id="idNodes" items="{flat>/rows}" mode="SingleSelectMaster">
+                        <headerToolbar>
+                            <OverflowToolbar>
+                                <Title text="Data Mapping" level="H2" />
+                                <ToolbarSpacer />
+                                <Button icon="sap-icon://add" press="handleAddNewRow" />
+                                <Button icon="sap-icon://delete" press="handleDeleteRow" />
+                            </OverflowToolbar>
+                        </headerToolbar>
                         <columns>
                             <Column>
                                 <header>
@@ -31,6 +39,7 @@
                             </ColumnListItem>
                         </items>
                     </Table>
+                    <code:CodeEditor type="json" value='{code>/code}' height="300px" />
                 </content>
                 <footer>
                     <Bar>
